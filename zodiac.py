@@ -41,7 +41,7 @@ def main():
             sign = "Taurus"
         
         #Invalid input regarding days or months 
-        if sign != (day > 1) or (day < 31) and (month > 1) or (month < 12):
+        if sign != (day < 1) or (day > 31) and (month < 1) or (month > 12):
             print("Invalid day and month! Please enter a day between 1-31 and a month between (1-12).")
         
 

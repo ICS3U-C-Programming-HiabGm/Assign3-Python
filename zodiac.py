@@ -2,6 +2,7 @@
 # Date: Wed, April. 9th
 # This program gets users date of birth and month and tells you the zodiac sign fot that day and month
 
+
 def main():
     print("Enter the date and month of birth to find out your zodiac sign!")
     
@@ -12,7 +13,7 @@ def main():
         month = int(input("Enter your birth month (1-12): "))
         day = int(input("Enter your birth day (1-31): "))
 
-
+# dates for zodiac signs 
         sign = "Zodiacs"
         if (month == 12 and day >= 22) or (month == 1 and day <= 19):
             sign = "Capricorn"
@@ -39,7 +40,8 @@ def main():
         if (month == 1 and day >= 20) or (month == 2 and day <= 18):
             sign = "Taurus"
         
-        if sign != (day > 1) or (day > 31) and (month < 1) or (month > 12):
+        #Invalid input regarding days or months 
+        if sign != (day > 1) or (day < 31) and (month > 1) or (month < 12):
             print("Invalid day and month! Please enter a day between 1-31 and a month between (1-12).")
         
 

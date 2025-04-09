@@ -27,15 +27,15 @@ def main():
         if (month == 7 and day >= 23) or (month == 8 and day <= 22):
             sign = "Leo"
         if (month == 6 and day >= 21) or (month == 7 and day <= 22):
-            sign="Cance"
+            sign="Cancer"
         if (month == 5 and day >= 21) or (month == 6 and day <= 20):
             sign = "Gemini"
         if (month == 4 and day >= 20) or (month == 5 and day <= 20):
             sign = "Taurus"
         if (month == 3 and day >= 21) or (month == 4 and day <= 19):
-            sign="Aries"
+            sign = "Aries"
         if (month == 2 and day >= 19) or (month == 3 and day <= 20):
-            sign="Pisces"
+            sign = "Pisces"
         if (month == 1 and day >= 20) or (month == 2 and day <= 18):
             sign = "Taurus"
         

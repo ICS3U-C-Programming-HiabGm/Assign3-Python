@@ -3,20 +3,19 @@
 # This program gets users date of birth and month and tells you the zodiac sign fot that day and month
 
 
-
 def main():
     print("Enter your birthday to find out your zodiac sign!")
 
     try:
-      
+
         month = int(input("Enter your birth month (1-12): "))
         day = int(input("Enter your birth day (1-31): "))
 
         # Validate input first
         if month < 1 or month > 12 or day < 1 or day > 31:
             print("Invalid date! Month must be 1-12 and day must be 1-31.")
-            
-  # Dates for zodiac signs
+
+        # Dates for zodiac signs
         sign = "Zodiacs"
         if (month == 1 and day >= 20) or (month == 2 and day <= 18):
             sign = "Aquarius"
